@@ -21,11 +21,13 @@ main {
     text-align: center;
     background-color: #d2b48c;
     border-radius: 1vh;
+    box-shadow: 8px 8px;
 }
 
 #title {
     font-size: 3rem;
     color: #332411;
+    text-shadow: 1px 1px black;
 }
 
 #results {
@@ -35,6 +37,7 @@ main {
     border-radius: 1vh;
     padding: 2vh;
     transition: ease-in-out 2s;
+    box-shadow: 1px 1px black;
 }
 
 button, input, select {
@@ -46,6 +49,7 @@ button, input, select {
     background-color: #332411;
     color: #9E958A;
     transition: ease-in-out 0.25s;
+    box-shadow: 1px 1px black;
 }
 
 option {
