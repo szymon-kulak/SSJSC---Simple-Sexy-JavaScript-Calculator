@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic Calculator</title>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width initial-scale=0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <main>
+            <div class="calc">
+                <h1 id = "title">A Sexy Calculator</h1>
+                <div id = "results">The results will appear here...</div>
+                <form id = "userInput">
+                    <input type="number" id="firstNum">
+                    <select id="calcType" name="calcType">
+                        <option value="" selected disabled hidden></option>
+                        <option value="add">+</option>
+                        <option value="subtract">-</option>
+                        <option value="multiply">*</option>
+                        <option value="divide">/</option>
+                        <option value="modulo">%</option>
+                    </select>
+                    <input type="number" id="secondNum">
+                    <button type="button" onclick="clickHandler()">Let's Calc!</button>
+                </form>
+            </div>
+        </main>                
+    </body>
+</html>

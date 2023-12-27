@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6B5F4E;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50dvh;
+    width: 50dvw;
+    text-align: center;
+    background-color: #d2b48c;
+    border-radius: 1vh;
+}
+
+#title {
+    font-size: 3rem;
+    color: #332411;
+}
+
+#results {
+    font-size: 1.6rem;
+    background-color: #9E958A;
+    margin: 20px;
+    border-radius: 1vh;
+    padding: 2vh;
+    transition: ease-in-out 2s;
+}
+
+button, input, select {
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+    border: 2px solid #382D1E;
+    border-radius: 1vh;
+    background-color: #332411;
+    color: #9E958A;
+    transition: ease-in-out 0.25s;
+}
+
+option {
+    text-align: center;
+}
+
+button:hover, input:hover, select:hover {
+    background-color: #6B5F4E;
+    color: #332411;
+}
+
+button:focus, input:focus, select:focus {
+    background-color: #9E958A;
+    color: #332411;
+    outline: 0; /* removes the blue border on click */
+}
+
+/* removing the arrows from number inputs, chromium */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* removing the arrows from number inputs, firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
