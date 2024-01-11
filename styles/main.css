@@ -16,7 +16,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50dvh;
+    min-height: 50dvh;
     width: 50dvw;
     text-align: center;
     background-color: #d2b48c;
@@ -78,4 +78,30 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
+}
+
+
+@media (max-width: 1200px) {
+    main {
+      width: 90dvw;
+      max-height: 60dvh;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      min-height: 60dvh;
+      max-height: 90dvh;
+    }
+  
+    button, input, select {
+      width: 90%;
+      margin-bottom: 6px;
+    }
+  }
+  
+  @media (max-height: 600px) {
+    #title {
+      font-size: 2rem;
+    }
   }
